@@ -71,7 +71,7 @@ const NewsLetter = () => {
   return (
     <div className='my-12' ref={containerRef}>
 
-      <div className='w-full mt-12 rounded-lg bg-gradient-to-r from-gray-300/80 to-gray-100 dark:bg-gradient-to-r dark:from-zinc-800/80 dark:to-zinc-700'>
+      <div className='w-full mt-12 rounded-lg bg-gradient-to-r from-gray-300/80 to-gray-100 dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]'>
         <div className="px-6 py-6 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
           <div className="xl:w-0 xl:flex-1">
             <h3 className="text-3xl font-bold leading-8 tracking-tight text-skin-base dark:text-skin-inverted sm:text-4xl sm:leading-9" ref={notifiRef}>
@@ -105,7 +105,7 @@ const NewsLetter = () => {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium leading-6 text-white uppercase transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400"
+                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium leading-6 text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-md focus:outline-none bg-[#7b9385]"
                   ref={buttonRef}
                 >
                   Subscribe

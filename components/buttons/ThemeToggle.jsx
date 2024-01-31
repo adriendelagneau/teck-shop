@@ -8,9 +8,7 @@ const ThemeToggle = () => {
 
     const { theme, setTheme } = useTheme()
     const [isMounted, setIsMounted] = useState(false)
-    console.log(theme)
 
-    
     useEffect(() => {
         setIsMounted(true)      
     }, [])
@@ -18,13 +16,13 @@ const ThemeToggle = () => {
     if(!isMounted) return null
   
     return (
-        <>
+        <div className='cursor-pointer'>
             {theme === "light" ? (
-                <Moon onClick={() => setTheme("dark")}/>
+                <Moon onClick={() => setTheme("dark")}  />
             ) : (
                 <Sun onClick={() => setTheme("light")}/>
             )}
-        </>
+        </div>
   )
 }
 

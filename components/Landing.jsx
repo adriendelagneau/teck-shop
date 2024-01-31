@@ -35,7 +35,7 @@ const Landing = () => {
     }, [])
 
     return (
-        <div className="px-4 mx-auto bg-gradient-to-r from-gray-300/80 to-gray-100 sm:px-12 rounded-xl dark:bg-gradient-to-r dark:from-zinc-800/80 dark:to-zinc-700">
+        <div className="px-4 mx-auto bg-gradient-to-r from-gray-300/80 to-gray-100 sm:px-12 rounded-xl dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
             <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center 2xl:sm:min-h-[750px] ">
                 <div className="container pb-8 sm:pb-0">
 
@@ -52,7 +52,7 @@ const Landing = () => {
                                 {data.title2}
                             </h1>
                             <div>
-                                <button className="px-4 py-3 text-lg uppercase text-white dark:text-skin-base font-semibold bg-red-800 rounded-lg opacity-0 translate-y-[100px]" ref={buttonRef}>shop now</button>
+                                <button className="px-4 py-3 text-lg uppercase text-white font-semibold rounded-lg opacity-0 translate-y-[100px] bg-[#7b9385]" ref={buttonRef}>shop now</button>
                             </div>
                         </div>
                  
@@ -61,7 +61,7 @@ const Landing = () => {
                                 <img
                                     src={data.img}
                                     alt=""
-                                    className="w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40 scale-75 opacity-0 "
+                                    className="w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-50 scale-75 opacity-0 "
                                     ref={myRef}
                                 />
                             </div>

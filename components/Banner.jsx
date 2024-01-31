@@ -71,16 +71,11 @@ const Banner = () => {
       { opacity: 1, translateX: 0, duration: 0.4, ease: "none" },
       "init"
     );
-    Tl.fromTo(
-      buttonRef.current,
-      { opacity: 0, translateX: "30px" },
-      { opacity: 1, translateX: 0, duration: 0.4, ease: "none" },
-      "init"
-    );
+
   }, []);
 
   return (
-    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-zinc-800/80 dark:to-zinc-700">
+    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
       <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-skin-base dark:text-skin-inverted">
         <p ref={promoRef} className="py-3">30% off</p>
         <div className="text-5xl font-bold uppercase lg:text-6xl xl:text-7xl" ref={happyHoursRef}>
@@ -108,12 +103,7 @@ const Banner = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
           reiciendis
         </p>
-        <button
-          className="w-[200px] px-5 py-3 text-base  leading-6 text-skin-inverted dark:text-skin-base font-semibold  transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 uppercase"
-          ref={buttonRef}
-        >
-          shop now
-        </button>
+        <button className="w-[200px] px-5 py-3 text-base  leading-6 text-skin-inverted  font-semibold  bg-[#7b9385] border border-transparent rounded-md focus:outline-none uppercase">shop now</button>
       </div>
     </div>
   );

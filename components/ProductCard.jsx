@@ -6,7 +6,7 @@ const ProductCard = ({ productData }) => {
 
   return (
    
-    <div className="duration-500 bg-white border shadow-md w-72 rounded-xl hover:scale-105 hover:shadow-xl h-[416px] dark:bg-zinc-800 dark:border-stone-950">
+    <div className="duration-500 bg-white border shadow-md w-72 rounded-xl hover:scale-105 hover:shadow-xl h-[416px] dark:bg-[#1b1a1a] dark:border-stone-950">
       <Link href={`/product/${productData._id}`} >
         <div className='w-[286px] h-[286px]'>
           

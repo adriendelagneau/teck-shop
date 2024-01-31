@@ -12,21 +12,21 @@ module.exports = {
       },
       textColor: {
         skin: {
-          base: '#121212',
-          inverted: '#fafaf9',
+          base: '#0e0b0b',
+          inverted: '#f3f0f0',
           red: '#991b1b',
           gray: '#4b5563'
         }
       },
       backgroundColor: {
         skin: {
-          fill: '#121212',
-          inverted: '#fafaf9'
+          fill: '#0e0b0b',
+          inverted: '#f3f0f0'
         }
       },
       borderColor: {
         skin: {
-          base: '#121212',
+          base: '#0e0b0b',
         }
       },
      

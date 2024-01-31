@@ -24,7 +24,7 @@ const AddToCartButton = ({ product }) => {
   };
 
   return (
-    <RippleButton type={"submit"} text={"Add To Cart"} buttonClasses={"w-full mt-10 text-xl rounded-md bg-stone-900 dark:bg-zinc-400 dark:text-skin-base  lg:w-[250px]"}  onClick={handleAddToCart} />
+    <RippleButton type={"submit"} text={"Add To Cart"} buttonClasses={"w-full mt-10 text-xl rounded-md bg-stone-900 dark:bg-zinc-300 dark:text-skin-base  lg:w-[250px]"}  onClick={handleAddToCart} />
 
   )
 }
