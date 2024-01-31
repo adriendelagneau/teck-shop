@@ -85,7 +85,7 @@ const Slider2 = ({ data }) => {
 
   return (
     <div className="relative overflow-hidden h-[500px] z-10 w-full my-32 mx-auto" ref={sliderContainerRef}>
-      <div className="absolute top-0 flex gap-12 transition-transform duration-500 ease-out" ref={sliderRef}>
+      <div className="absolute top-0 flex gap-12 py-3 transition-transform duration-500 ease-out" ref={sliderRef}>
         {data.map((item, i) => (
           <div key={i}>
             <ProductCard productData={item} />
@@ -95,13 +95,13 @@ const Slider2 = ({ data }) => {
       <div className="absolute bottom-0 left-0 z-40 hidden lg:flex">
         <RippleButton
           onClick={slideLeft}
-          buttonClasses="bg-skin-fill dark:bg-skin-inverted font-medium px-2 mr-2"
-          icon={<ChevronLeft className="w-6 h-6 dark:text-skin-base" />}
+          buttonClasses="bg-skin-fill dark:bg-zinc-900 font-medium px-2 mr-2"
+          icon={<ChevronLeft className="w-6 h-6 " />}
         />
         <RippleButton
           onClick={slideRight}
-          buttonClasses="bg-skin-fill dark:bg-skin-inverted font-medium px-2"
-          icon={<ChevronRight className="w-6 h-6 dark:text-skin-base" />}
+          buttonClasses="bg-skin-fill dark:bg-zinc-900 font-medium px-2"
+          icon={<ChevronRight className="w-6 h-6 " />}
         />
       </div>
     </div>

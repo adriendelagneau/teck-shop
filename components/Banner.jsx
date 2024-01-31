@@ -73,14 +73,14 @@ const Banner = () => {
     );
     Tl.fromTo(
       buttonRef.current,
-      { opacity: 0, translateX: "-30px" },
+      { opacity: 0, translateX: "30px" },
       { opacity: 1, translateX: 0, duration: 0.4, ease: "none" },
       "init"
     );
   }, []);
 
   return (
-    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-gray-800/80 dark:to-gray-600 ">
+    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-zinc-800/80 dark:to-zinc-700">
       <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-skin-base dark:text-skin-inverted">
         <p ref={promoRef} className="py-3">30% off</p>
         <div className="text-5xl font-bold uppercase lg:text-6xl xl:text-7xl" ref={happyHoursRef}>
