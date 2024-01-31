@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useSession } from 'next-auth/react';
 import CartIcon from './buttons/CartIcon';
+import ThemeToggle from './buttons/ThemeToggle';
 
 
 const Header = () => {
@@ -41,8 +42,8 @@ const Header = () => {
                 <div className='w-1/2 text-xl font-Lemon sm:text-center sm:text-3xl'>
                     <Link href={"/"} >Electro Store</Link>
                 </div>
-                <ul className='flex items-center justify-end w-1/4 gap-4'>
-
+                <ul className='flex items-center justify-end w-1/4 gap-4 font-semibold'>
+                    <li><ThemeToggle /></li>
                     <li>
                         {session?.user ? (
                             session?.user.role === "admin" ? (

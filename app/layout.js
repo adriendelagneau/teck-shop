@@ -3,6 +3,7 @@ import "./globals.css";
 import AuthProvider from "@/components/providers/AuthProvider";
 import SmoothScrolling from "@/components/providers/LennisProvider";
 import { Toaster } from "sonner";
+import ThemeToggleProviser from "@/components/providers/ThemeToggleProviser";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,12 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <SmoothScrolling>
           <AuthProvider>
-            <Toaster richColors toastOptions={{ classNames: { title: 'text-lg' } }} />
+            <ThemeToggleProviser>
+              <Toaster richColors toastOptions={{ classNames: { title: 'text-lg' } }} />
               <div className="px-3 mx-auto max-w-screen-2xl text-skin-base">
                 {children}
               </div>
+            </ThemeToggleProviser>
           </AuthProvider>
         </SmoothScrolling>
       </body>
