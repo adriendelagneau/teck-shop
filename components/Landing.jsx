@@ -52,7 +52,7 @@ const Landing = () => {
                                 {data.title2}
                             </h1>
                             <div>
-                                <button className="px-4 py-3 text-lg font-bold text-white bg-red-800 rounded-full opacity-0 translate-y-[100px]" ref={buttonRef}>shop now</button>
+                                <button className="px-4 py-3 text-lg uppercase text-white bg-red-800 rounded-lg opacity-0 translate-y-[100px]" ref={buttonRef}>shop now</button>
                             </div>
                         </div>
                  

@@ -109,7 +109,7 @@ const Banner = () => {
           reiciendis
         </p>
         <button
-          className="w-[200px] px-3 py-2 text-green-700 uppercase bg-white rounded-xl mt-3"
+          className="w-[200px] px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 uppercase"
           ref={buttonRef}
         >
           shop now
