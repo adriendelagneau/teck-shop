@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <AuthProvider>
             <ThemeToggleProviser>
               <Toaster richColors toastOptions={{ classNames: { title: 'text-lg' } }} />
-              <div className="px-3 mx-auto max-w-screen-2xl text-skin-base">
+              <div className="px-3 mx-auto max-w-screen-2xl text-light-primary">
                 {children}
               </div>
             </ThemeToggleProviser>

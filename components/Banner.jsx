@@ -75,8 +75,8 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
-      <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-skin-base dark:text-skin-inverted">
+    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-[#e7e8e8] lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
+      <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-light-primary dark:text-dark-primary">
         <p ref={promoRef} className="py-3">30% off</p>
         <div className="text-5xl font-bold uppercase lg:text-6xl xl:text-7xl" ref={happyHoursRef}>
           <p>happy</p>
@@ -94,7 +94,7 @@ const Banner = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center flex-1 gap-3 p-6 text-xl text-skin-base dark:text-skin-inverted lg:items-start">
+      <div className="flex flex-col items-center flex-1 gap-3 p-6 text-xl text-light-primary dark:text-dark-primary lg:items-start">
         <p ref={titleRef}>Air Solo Bass</p>
         <p className="text-3xl font-bold xl:text-5xl" ref={winterRef}>
           Winter Sale

@@ -95,13 +95,13 @@ const Slider2 = ({ data }) => {
       <div className="absolute bottom-0 left-0 z-40 hidden lg:flex">
         <RippleButton
           onClick={slideLeft}
-          buttonClasses="bg-skin-fill dark:bg-zinc-900 font-medium px-2 mr-2"
-          icon={<ChevronLeft className="w-6 h-6 " />}
+          buttonClasses="bg-light-primary dark:bg-dark-secondary font-medium px-2 mr-2"
+          icon={<ChevronLeft className="w-6 h-6 text-light-primary dark:text-dark-primary" />}
         />
         <RippleButton
           onClick={slideRight}
-          buttonClasses="bg-skin-fill dark:bg-zinc-900 font-medium px-2"
-          icon={<ChevronRight className="w-6 h-6 " />}
+          buttonClasses="bg-light-primary dark:bg-dark-secondary font-medium px-2"
+          icon={<ChevronRight className="w-6 h-6 text-light-primary dark:text-dark-primary" />}
         />
       </div>
     </div>

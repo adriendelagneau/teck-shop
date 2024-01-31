@@ -6,7 +6,7 @@ const ProductCard = ({ productData }) => {
 
   return (
    
-    <div className="duration-500 bg-white border shadow-md w-72 rounded-xl hover:scale-105 hover:shadow-xl h-[416px] dark:bg-[#1b1a1a] dark:border-stone-950">
+    <div className="duration-500 bg-light-primary border shadow-md w-72 rounded-xl hover:scale-105 hover:shadow-xl h-[416px] dark:bg-[#1b1a1a] dark:border-stone-950">
       <Link href={`/product/${productData._id}`} >
         <div className='w-[286px] h-[286px]'>
           
@@ -20,13 +20,13 @@ const ProductCard = ({ productData }) => {
           </div>
         <div className="px-4 py-3 w-72">
           <span className="mr-3 text-xs text-gray-400 uppercase">{productData.brand}</span>
-          <p className="block text-lg font-bold truncate capitsalize text-skin-base dark:text-skin-inverted">{productData.name}</p>
+          <p className="block text-lg font-bold truncate capitsalize text-light-primary dark:text-dark-primary">{productData.name}</p>
           <div className="flex items-center">
-            <p className="my-3 text-lg font-semibold cursor-auto text-skin-base dark:text-skin-inverted">{productData.price} €</p>
+            <p className="my-3 text-lg font-semibold cursor-auto text-light-primary dark:text-dark-primary">{productData.price} €</p>
             <del>
               <p className="ml-2 text-sm text-red-600 cursor-auto">{productData.oldPrice}</p>
             </del>
-            <div className="ml-auto dark:text-skin-inverted text-skin-base"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            <div className="ml-auto dark:text-dark-primary text-light-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
               fill="currentColor" className="bi bi-bag-plus" viewBox="0 0 16 16">
               <path fillRule="evenodd"
                 d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />

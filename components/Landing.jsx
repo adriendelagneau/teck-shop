@@ -35,20 +35,20 @@ const Landing = () => {
     }, [])
 
     return (
-        <div className="px-4 mx-auto bg-gradient-to-r from-gray-300/80 to-gray-100 sm:px-12 rounded-xl dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
+        <div className="px-4 mx-auto bg-gradient-to-r from-gray-300/80 to-[#e7e8e8] sm:px-12 rounded-xl dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
             <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center 2xl:sm:min-h-[750px] ">
                 <div className="container pb-8 sm:pb-0">
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 ">
                
                         <div className="flex flex-col justify-center gap-4 pt-10 text-center xl:gap-12 sm:pl-3 sm:pt-0 sm:text-left">
-                            <h1 className="text-2xl font-bold scale-75 opacity-0 sm:text-6xl lg:text-2xl dark:text-skin-inverted" ref={subtitleRef}>
+                            <h1 className="text-2xl font-bold scale-75 opacity-0 sm:text-6xl lg:text-2xl dark:text-dark-primary" ref={subtitleRef}>
                                 {data.subtitle}
                             </h1>
-                            <h1 className="text-5xl font-bold scale-90 opacity-0 sm:text-6xl lg:text-7xl dark:text-skin-inverted" ref={titleRef}>
+                            <h1 className="text-5xl font-bold scale-90 opacity-0 sm:text-6xl lg:text-7xl dark:text-dark-primary" ref={titleRef}>
                                 {data.title}
                             </h1>
-                            <h1 className="text-5xl uppercase text-white dark:text-skin-base sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold scale-75 opacity-0" ref={title2Ref}>
+                            <h1 className="text-5xl uppercase text-white dark:text-light-primary sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold scale-75 opacity-0" ref={title2Ref}>
                                 {data.title2}
                             </h1>
                             <div>

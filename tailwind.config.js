@@ -12,17 +12,28 @@ module.exports = {
       },
       textColor: {
         skin: {
-          base: '#0e0b0b',
-          inverted: '#f3f0f0',
+        
           red: '#991b1b',
           gray: '#4b5563'
-        }
+        },
+        almondGreen : "#6c8476",
+        light: {
+            primary: '#211213', 
+          },
+          dark: {
+            primary: '#eddedf', 
+          },
       },
       backgroundColor: {
-        skin: {
-          fill: '#0e0b0b',
-          inverted: '#f3f0f0'
-        }
+       
+        light: {
+          primary: '#e7e8e8', 
+          secondary: '#efefef', 
+        },
+        dark: {
+          primary: '#121212', 
+          secondary: '#27272a',
+        },
       },
       borderColor: {
         skin: {
