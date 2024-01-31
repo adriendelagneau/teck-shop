@@ -80,8 +80,8 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto">
-      <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-skin-base">
+    <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-gray-100 lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-gray-800/80 dark:to-gray-600 ">
+      <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-skin-base dark:text-skin-inverted">
         <p ref={promoRef} className="py-3">30% off</p>
         <div className="text-5xl font-bold uppercase lg:text-6xl xl:text-7xl" ref={happyHoursRef}>
           <p>happy</p>
@@ -99,7 +99,7 @@ const Banner = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center flex-1 gap-3 p-6 text-xl text-skin-base lg:items-start">
+      <div className="flex flex-col items-center flex-1 gap-3 p-6 text-xl text-skin-base dark:text-skin-inverted lg:items-start">
         <p ref={titleRef}>Air Solo Bass</p>
         <p className="text-3xl font-bold xl:text-5xl" ref={winterRef}>
           Winter Sale
@@ -109,7 +109,7 @@ const Banner = () => {
           reiciendis
         </p>
         <button
-          className="w-[200px] px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 uppercase"
+          className="w-[200px] px-5 py-3 text-base  leading-6 text-skin-inverted dark:text-skin-base font-semibold  transition duration-150 ease-in-out bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 uppercase"
           ref={buttonRef}
         >
           shop now

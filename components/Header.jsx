@@ -27,7 +27,7 @@ const Header = () => {
     }, [prevScrollPos, visible]);
 
     return (
-        <header className={`w-full bg-white text-skin-base transition-all fixed top-0 h-16 z-50 ${!visible && 'top-[-64px]'} left-[50%] translate-x-[-50%] max-w-screen-2xl`}>
+        <header className={`w-full bg-skin-inverted  dark:bg-skin-fill text-skin-base dark:text-skin-inverted transition-all fixed top-0 h-16 z-50 ${!visible && 'top-[-64px]'} left-[50%] translate-x-[-50%] max-w-screen-2xl`}>
             <nav className='flex items-center justify-between w-full h-full px-4 py-2'>
                 <Link href={"/"} className='hidden w-1/4 sm:inline-flex'>
 

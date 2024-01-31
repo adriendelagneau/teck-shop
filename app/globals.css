@@ -8,6 +8,9 @@
 }
 
 @layer base {
+  body {
+   @apply  bg-skin-inverted dark:bg-skin-fill
+  }
   h2 {
     @apply my-6 text-3xl capitalize lg:text-4xl;
   }

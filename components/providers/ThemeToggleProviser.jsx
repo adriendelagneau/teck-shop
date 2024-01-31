@@ -1,11 +1,19 @@
 "use client"
 
 import { ThemeProvider } from 'next-themes'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-const ThemeToggleProviser = ({children}) => {
+const ThemeToggleProviser = ({ children }) => {
+    
+    const [isMounted, setIsMounted] = useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
+
+    if (!isMounted) return <>{children}</>
   return (
-      <ThemeProvider>{ children }</ThemeProvider>
+      <ThemeProvider attribute="class">{ children }</ThemeProvider>
   )
 }
 
