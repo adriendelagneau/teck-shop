@@ -103,7 +103,7 @@ const Banner = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
           reiciendis
         </p>
-        <button className="w-[200px] px-5 py-3 text-base  leading-6 text-skin-inverted  font-semibold  bg-[#7b9385] border border-transparent rounded-md focus:outline-none uppercase">shop now</button>
+        <button className="w-[200px] px-5 py-3 text-base  leading-6 text-dark-primary  font-semibold  bg-[#7b9385] border border-transparent rounded-md focus:outline-none uppercase">shop now</button>
       </div>
     </div>
   );

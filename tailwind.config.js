@@ -12,7 +12,6 @@ module.exports = {
       },
       textColor: {
         skin: {
-        
           red: '#991b1b',
           gray: '#4b5563'
         },
@@ -29,6 +28,7 @@ module.exports = {
         light: {
           primary: '#e7e8e8', 
           secondary: '#efefef', 
+          inverted: '#211213'
         },
         dark: {
           primary: '#121212', 
@@ -36,9 +36,8 @@ module.exports = {
         },
       },
       borderColor: {
-        skin: {
-          base: '#0e0b0b',
-        }
+        light: "#d0d1d1",
+        dark: "#27272a"
       },
      
     },

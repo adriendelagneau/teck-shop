@@ -15,7 +15,7 @@ const ImageComponent = ({ images }) => {
                         width={63}
                         height={63}
                         alt=''
-                        className='p-1 border cursor-pointer border-zinc-700'
+                        className='p-1 border cursor-pointer border-light dark:border-dark'
                         onClick={() => setSelectedImage(images[i])}
                         />
                         </div>
@@ -23,7 +23,7 @@ const ImageComponent = ({ images }) => {
             </div>
             <div className='w-full'>
 
-            <Image src={selectedImage} width={550} height={550} alt='' className='border-4 rounded border-zinc-700' />
+            <Image src={selectedImage} width={550} height={550} alt='' className='border-4 rounded border-light dark:border-dark' />
             </div>
         </div>
     )
