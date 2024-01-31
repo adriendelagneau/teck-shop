@@ -2,32 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Lemon';
+  src: url('../public/font/LemonMilk.otf');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h2 {
+    @apply my-6 text-3xl capitalize lg:text-4xl;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .cardio {
+    
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+ /* Category  */
+ .img{
+  border:1px solid #222;
+  margin: 0 2px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img1{ background-image: url("https://res.cloudinary.com/dos8mey8r/image/upload/v1704735940/shoes/alphacolor-XdDyRTVo-iw-unsplash_zgn4nd.jpg"); }
+.img2{ background-image: url("https://res.cloudinary.com/dos8mey8r/image/upload/v1704732959/shoes/daniel-romero-6V5vTuoeCZg-unsplash_f6d3mr.jpg"); }  
+.img3{ background-image: url("https://res.cloudinary.com/dos8mey8r/image/upload/v1704736216/shoes/eliott-van-buggenhout-ALf_DGUsgro-unsplash_igssqo.jpg"); }
+.img4{ background-image: url("https://res.cloudinary.com/dos8mey8r/image/upload/v1704735641/shoes/smart-watch-6482245_1280_ujjksl.jpg"); }
+
+@media only screen and (min-width: 1280px) {
+
+  .img {
+    height: 100%;
+  }
+  .img:hover{
+    flex: 5;
   }
 }
