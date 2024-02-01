@@ -40,7 +40,7 @@ const Landing = () => {
 
 
     return (
-        <div className="px-4 mx-auto bg-gradient-to-r from-gray-300/80 to-[#e7e8e8] sm:px-12 rounded-xl dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
+        <div className="px-4 mx-auto bg-gradient-light sm:px-12 rounded-xl dark:bg-gradient-dark">
             <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center 2xl:sm:min-h-[750px] ">
                 <div className="container pb-8 sm:pb-0">
 

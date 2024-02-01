@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-light': 'linear-gradient(to right, rgba(128,128,128,0.3), #e7e8e8)',
+        'gradient-dark': 'linear-gradient(to right, #1b1a1a, #2b2929)',
+      },
       fontFamily: {
         Lemon: ['Lemon']
       },
