@@ -1,5 +1,6 @@
 "use client"
 import gsap from "gsap";
+import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 
@@ -58,7 +59,10 @@ const Landing = () => {
                  
                         <div>
                             <div className="relative z-10">
-                                <img
+                                <Image
+                                    width={550}
+                                    height={550}
+                                    priority
                                     src={data.img}
                                     alt=""
                                     className="w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-50 scale-75 opacity-0 "

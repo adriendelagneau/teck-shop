@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <SmoothScrolling>
           <AuthProvider>
             <ThemeToggleProviser>
-              <Toaster richColors toastOptions={{ classNames: { title: 'text-lg' } }} />
+              <Toaster  richColors toastOptions={{ classNames: { title: 'text-lg' } }} />
               <div className="px-3 mx-auto max-w-screen-2xl text-light-primary">
                 {children}
               </div>
