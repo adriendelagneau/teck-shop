@@ -1,8 +1,9 @@
 'use client'
 import { subscribeToNewsletter } from '@/actions/userActions';
+import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 
@@ -31,7 +32,7 @@ const NewsLetter = () => {
   const inputRef = useRef(null)
   
   
-  useEffect(() => {
+  useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     let Tl = gsap.timeline({
@@ -42,15 +43,8 @@ const NewsLetter = () => {
       },
     });
 
-    Tl.fromTo(
-      phraseRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.4, ease: "none" },
-      "init"
-    );
-
-    Tl.fromTo(
-      secondPhraseRef.current,
+    Tl.fromTo([
+      phraseRef.current,  secondPhraseRef.current],
       { opacity: 0 },
       { opacity: 1, duration: 0.4, ease: "none" },
       "init"
@@ -62,11 +56,7 @@ const NewsLetter = () => {
       { opacity: 1, translateX: 0, duration: 0.4, ease: "none" },
       "init"
     );
-
-
-
-    
-  }, [])
+  })
 
   return (
     <div className='my-12' ref={containerRef}>

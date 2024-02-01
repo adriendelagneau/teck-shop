@@ -1,4 +1,5 @@
 "use client"
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
@@ -18,22 +19,25 @@ const HeroData = [
 const Landing = () => {
     const data = HeroData[0]; // Displaying the first item from HeroData array
     const myRef = useRef(null)
-    const title2Ref = useRef(null)
     const titleRef = useRef(null)
+    const title2Ref = useRef(null)
     const subtitleRef = useRef(null)
     const buttonRef = useRef(null)
 
-    useEffect(() => {
-
+    useGSAP(() => {
         let Tl = gsap.timeline()
 
-        Tl.to(myRef.current, { scale: 1, opacity: 1, duration: 1 }, 'init')
-        Tl.to(title2Ref.current, { opacity: 1, scale: 1, duration: 1 }, "init")
-        Tl.to(titleRef.current, { opacity: 1, scale: 1, duration: 1 }, "init")
-        Tl.to(subtitleRef.current, { opacity: 1, scale: 1, duration: 1 }, "init")
+        Tl.to([
+            myRef.current,
+            titleRef.current,
+            title2Ref.current,
+            subtitleRef.current
+        ], { opacity: 1, scale: 1, duration: 1 }, 'init')
+        
         Tl.to(buttonRef.current, { opacity: 1, translateY: 0, duration: 1 }, "init")
+    })
 
-    }, [])
+
 
     return (
         <div className="px-4 mx-auto bg-gradient-to-r from-gray-300/80 to-[#e7e8e8] sm:px-12 rounded-xl dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">
@@ -41,7 +45,7 @@ const Landing = () => {
                 <div className="container pb-8 sm:pb-0">
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 ">
-               
+
                         <div className="flex flex-col justify-center gap-4 pt-10 text-center xl:gap-12 sm:pl-3 sm:pt-0 sm:text-left">
                             <div className="text-2xl font-bold scale-75 opacity-0 sm:text-6xl lg:text-2xl dark:text-dark-primary" ref={subtitleRef}>
                                 {data.subtitle}
@@ -56,7 +60,7 @@ const Landing = () => {
                                 <button className="px-4 py-3 text-lg uppercase text-white font-semibold rounded-lg opacity-0 translate-y-[100px] bg-[#7b9385]" ref={buttonRef}>shop now</button>
                             </div>
                         </div>
-                 
+
                         <div>
                             <div className="relative z-10">
                                 <Image

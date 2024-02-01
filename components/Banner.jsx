@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Banner = () => {
   const imageRef = useRef(null);
@@ -15,10 +16,8 @@ const Banner = () => {
   const titleRef = useRef(null);
   const winterRef = useRef(null);
   const textRef = useRef(null);
-  const buttonRef = useRef(null);
 
-
-  useEffect(() => {
+  useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     let Tl = gsap.timeline({
@@ -27,7 +26,7 @@ const Banner = () => {
         start: "top 80%",
         toggleActions: "play none play reverse",
       },
-    });
+    })
 
     Tl.fromTo(
       imageRef.current,
@@ -35,44 +34,24 @@ const Banner = () => {
       { opacity: 1, scale: 1, duration: 0.4, ease: "none" },
       "init"
     );
-    Tl.fromTo(
-      promoRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.4, ease: "none" },
-      "init"
-    );
-    Tl.fromTo(
-      happyHoursRef.current,
-      { opacity: 0, translateX: "30px" },
-      { opacity: 1, translateX: 0, duration: 0.4, ease: "none" },
-      "init"
-    );
-    Tl.fromTo(
-      delayRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.4, ease: "none" },
-      "init"
-    );
-    Tl.fromTo(
-      titleRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.4, ease: "none" },
-      "init"
-    );
-    Tl.fromTo(
-      textRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.4, ease: "none" },
-      "init"
-    );
-    Tl.fromTo(
-      winterRef.current,
+
+    Tl.fromTo([
+      happyHoursRef.current, winterRef.current ],
       { opacity: 0, translateX: "30px" },
       { opacity: 1, translateX: 0, duration: 0.4, ease: "none" },
       "init"
     );
 
-  }, []);
+     
+    Tl.fromTo([
+      promoRef.current, delayRef.current, titleRef.current, textRef.current],
+      { opacity: 0 },
+      { opacity: 1, duration: 0.4, ease: "none" },
+      "init"
+    ); 
+    
+  })
+
 
   return (
     <div className="w-full relative  rounded-xl bg-gradient-to-r from-gray-300/80 to-[#e7e8e8] lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-to-r dark:from-[#1b1a1a] dark:to-[#2b2929]">

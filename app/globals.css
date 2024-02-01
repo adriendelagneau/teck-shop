@@ -12,7 +12,7 @@
    @apply  bg-light-secondary dark:bg-dark-primary  
   }
   h2 {
-    @apply my-6 text-3xl capitalize lg:text-4xl;
+    @apply my-6 text-3xl capitalize lg:text-4xl dark:text-dark-primary;
   }
 }
 
