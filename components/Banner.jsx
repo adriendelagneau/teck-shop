@@ -89,7 +89,7 @@ const Banner = () => {
           width={400}
           height={400}
           alt="smart watch"
-          src={"https://res.cloudinary.com/dos8mey8r/image/upload/v1706461424/electro/smartwatch2-removebg-preview_r5bgwm.png"}
+          src={"https://res.cloudinary.com/dos8mey8r/image/upload/v1706779097/electro/CITYPNG.COM_HD_Blue_Apple_Smart_Watch_Series_6_PNG_-_1500x1500_rofs5q.png"}
           className=" xl:h-96 xl:w-96 lg:w-80 lg:h-80 h-60 w-60"
         />
       </div>
