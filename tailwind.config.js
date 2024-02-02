@@ -42,8 +42,8 @@ module.exports = {
         dark_secondary: "#211213"
       },
       divideColor: {
-        'light_gray': "#D0D1D1",
-        'dark_gray': '#27272A',
+        light_gray: "#D0D1D1",
+        dark_gray: '#27272A',
       },
     },
   },
