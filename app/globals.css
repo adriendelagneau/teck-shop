@@ -8,12 +8,21 @@
 }
 
 @layer base {
+
+  
   body {
-   @apply  bg-light-secondary dark:bg-dark-primary  
+   @apply  bg-light_primary dark:bg-dark_primary text-light_primary dark:text-dark_primary;
   }
   h2 {
-    @apply my-6 text-3xl capitalize lg:text-4xl dark:text-dark-primary;
+    @apply text-3xl capitalize;
   }
+  button {
+    @apply  px-4 py-3 text-lg font-semibold uppercase rounded-lg bg-almond_green;
+  }
+  button:hover {
+    @apply bg-opacity-90 ;
+  }
+ 
 }
 
 @layer components {

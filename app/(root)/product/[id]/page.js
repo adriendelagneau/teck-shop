@@ -12,7 +12,7 @@ const ProductPage = async ({ params: { id } }) => {
 
   return (
   
-      <div className='w-full min-h-[calc(100vh-96px)] flex flex-col justify-center items-center lg:flex-row dark:text-dark-primary'>
+      <div className='w-full min-h-[calc(100vh-96px)] flex flex-col justify-center items-center lg:flex-row '>
         <div className='  w-[350px] p-3 md:w-[500px] lg:flex-1'>
           <ImageComponent images={product.images} />
         </div>
@@ -21,7 +21,7 @@ const ProductPage = async ({ params: { id } }) => {
           <div className='flex flex-col gap-6 capitalize'>
             <h2 className='text-3xl md:text-4xl 2xl:text-5xl'>{product.name}</h2>
       
-            <p className='text-xl text-gray-500 '>{product.brand}</p>
+            <p className='text-xl text-light_gray dark:text-dark_gray '>{product.brand}</p>
           <p className='text-xl '>{product.description}</p>
 
           </div>
@@ -30,7 +30,7 @@ const ProductPage = async ({ params: { id } }) => {
             <div className='flex gap-8 my-4 text-2xl lg:text-3xl'>
             <p>{product.price} €</p>
             <del>
-              <div className='text-red-700'>
+              <div className='text-light_red dark:text-dark_red'>
               {product.oldPrice}
               </div>
             </del>

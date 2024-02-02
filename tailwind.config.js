@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      colors: {
+        pepper: "var(--color-pepper)",
+        almond_green: "#7B9385"
+      },
       backgroundImage: {
         'gradient-light': 'linear-gradient(to right, rgba(128,128,128,0.3), #e7e8e8)',
         'gradient-dark': 'linear-gradient(to right, #1b1a1a, #2b2929)',
@@ -15,38 +20,34 @@ module.exports = {
         Lemon: ['Lemon']
       },
       textColor: {
-        skin: {
-          red: '#991b1b',
-          gray: '#4b5563'
-        },
-        almondGreen : "#6c8476",
-        light: {
-            primary: '#211213', 
-          },
-          dark: {
-            primary: '#eddedf', 
-          },
+        light_primary: '#211213',
+        light_secondary: '#211213',
+        dark_primary: '#EDDEDF',
+        dark_secondary: '#EDDEDF',
+        light_red: '#991B1B',
+        dark_red: "#EF4444",
+        light_gray: '#3F3F46',
+        dark_gray: "#A1A1AA",
       },
       backgroundColor: {
-       
-        light: {
-          primary: '#e7e8e8', 
-          secondary: '#efefef', 
-          inverted: '#211213'
-        },
-        dark: {
-          primary: '#121212', 
-          secondary: '#27272a',
-        },
+        light_primary: '#EFEFEF',
+        light_secondary: '#E7E8E8',
+        dark_primary: '#121212',
+        dark_secondary: '#1B1A1A'
       },
       borderColor: {
-        light: "#d0d1d1",
-        dark: "#27272a"
+        light_primary: "#D0D1D1",
+        light_secondary: "#EFEFEF",
+        dark_primary: "#27272A",
+        dark_secondary: "#211213"
       },
-     
+      divideColor: {
+        'light_gray': "#D0D1D1",
+        'dark_gray': '#27272A',
+      },
     },
-    variants: {}
   },
+  variants: {},
   plugins: [],
   darkMode: "class",
 }

@@ -27,7 +27,7 @@ const Header = () => {
     }, [prevScrollPos, visible]);
 
     return (
-        <header className={`w-full bg-light-secondary dark:bg-dark-primary text-light-primary dark:text-dark-primary transform transition-transform fixed top-0 h-16 z-50 ${!visible && 'translate-y-[-64px]'} left-[50%] translate-x-[-50%] max-w-screen-2xl`}>
+        <header className={`w-full  transform transition-transform fixed top-0 h-16 z-50 ${!visible && 'translate-y-[-64px]'} left-[50%] translate-x-[-50%] max-w-screen-2xl bg-light_primary dark:bg-dark_primary`}>
             <nav className='flex items-center justify-between w-full h-full px-4 py-2'>
                 <Link href={"/"} className='hidden w-1/4 sm:inline-flex'>
 
@@ -39,7 +39,7 @@ const Header = () => {
                         </g>
                     </svg>
                 </Link>
-                <div className='w-1/2 text-xl font-Lemon sm:text-center sm:text-3xl'>
+                <div className='w-1/2 text-xl font-Lemon sm:text-center sm:text-3xl '>
                     <Link href={"/"} >Electro Store</Link>
                 </div>
                 <ul className='flex items-center justify-end w-1/4 gap-4 font-semibold'>

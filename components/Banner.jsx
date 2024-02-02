@@ -55,7 +55,7 @@ const Banner = () => {
 
   return (
     <div className="w-full relative  rounded-xl bg-gradient-light lg:h-64 xl:h-[320px] lg:flex justify-between items-center my-32 max-w-[620px] lg:max-w-full mx-auto dark:bg-gradient-dark">
-      <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 text-light-primary dark:text-dark-primary">
+      <div className="flex flex-col items-center justify-center flex-1 gap-2 pl-6 text-xl lg:text-2xl xl:gap-6 ">
         <p ref={promoRef} className="py-3">30% off</p>
         <div className="text-5xl font-bold uppercase lg:text-6xl xl:text-7xl" ref={happyHoursRef}>
           <p>happy</p>
@@ -73,7 +73,7 @@ const Banner = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center flex-1 gap-3 p-6 text-xl text-light-primary dark:text-dark-primary lg:items-start">
+      <div className="flex flex-col items-center flex-1 gap-3 p-6 text-xl lg:items-start">
         <p ref={titleRef}>Air Solo Bass</p>
         <p className="text-3xl font-bold xl:text-5xl" ref={winterRef}>
           Winter Sale
@@ -82,7 +82,7 @@ const Banner = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
           reiciendis
         </p>
-        <button className="w-[200px] px-5 py-3 text-base  leading-6 text-dark-primary  font-semibold  bg-[#7b9385] border border-transparent rounded-md focus:outline-none uppercase">shop now</button>
+        <button className="w-[200px]  leading-6 text-dark-primary ">shop now</button>
       </div>
     </div>
   );

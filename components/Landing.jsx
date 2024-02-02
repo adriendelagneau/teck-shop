@@ -41,23 +41,23 @@ const Landing = () => {
 
     return (
         <div className="px-4 mx-auto bg-gradient-light sm:px-12 rounded-xl dark:bg-gradient-dark">
-            <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] hero-bg-color flex justify-center items-center 2xl:sm:min-h-[750px] ">
+            <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] flex justify-center items-center 2xl:sm:min-h-[750px] ">
                 <div className="container pb-8 sm:pb-0">
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 ">
 
                         <div className="flex flex-col justify-center gap-4 pt-10 text-center xl:gap-12 sm:pl-3 sm:pt-0 sm:text-left">
-                            <div className="text-2xl font-bold scale-75 opacity-0 sm:text-6xl lg:text-2xl dark:text-dark-primary" ref={subtitleRef}>
+                            <div className="text-2xl font-bold scale-75 opacity-0 sm:text-6xl lg:text-2xl " ref={subtitleRef}>
                                 {data.subtitle}
                             </div>
-                            <div className="text-5xl font-bold scale-90 opacity-0 sm:text-6xl lg:text-7xl dark:text-dark-primary" ref={titleRef}>
+                            <div className="text-5xl font-bold scale-90 opacity-0 sm:text-6xl lg:text-7xl " ref={titleRef}>
                                 {data.title}
                             </div>
-                            <div className="text-5xl uppercase text-white dark:text-almondGreen sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold scale-75 opacity-0" ref={title2Ref}>
+                            <div className="text-5xl uppercase text-white dark:text-almond_green sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold scale-75 opacity-0" ref={title2Ref}>
                                 {data.title2}
                             </div>
                             <div>
-                                <button className="px-4 py-3 text-lg uppercase text-white font-semibold rounded-lg opacity-0 translate-y-[100px] bg-[#7b9385]" ref={buttonRef}>shop now</button>
+                                <button className=" opacity-0 translate-y-[100px]" ref={buttonRef}>shop now</button>
                             </div>
                         </div>
 

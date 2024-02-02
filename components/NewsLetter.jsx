@@ -64,10 +64,10 @@ const NewsLetter = () => {
       <div className='w-full mt-12 rounded-lg bg-gradient-light dark:bg-gradient-dark'>
         <div className="px-6 py-6 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
           <div className="xl:w-0 xl:flex-1">
-            <h3 className="text-3xl font-bold leading-8 tracking-tight text-light-primary dark:text-dark-primary sm:text-4xl sm:leading-9" ref={notifiRef}>
+            <h3 className="text-3xl font-bold leading-8 tracking-tight sm:text-4xl sm:leading-9" ref={notifiRef}>
               Get notified whenever we publish something new
             </h3>
-            <p className="max-w-3xl mt-3 text-lg leading-6 text-light-primary dark:text-dark-primary" id="newsletter-headline" ref={phraseRef}>
+            <p className="max-w-3xl mt-3 text-lg leading-6 " id="newsletter-headline" ref={phraseRef}>
               Sign up for our newsletter to stay up to date.
             </p>
           </div>
@@ -88,22 +88,22 @@ const NewsLetter = () => {
                   },
                 })}
                 required
-                className="w-full px-5 py-3 text-base leading-6 text-gray-900 placeholder-gray-500 transition duration-150 ease-in-out border border-transparent rounded-md appearance-none bg-light-secondary focus:outline-none focus:placeholder-gray-400 "
+                className="w-full px-5 py-3 text-base leading-6 transition duration-150 ease-in-out border border-transparent rounded-md appearance-none bg-light-secondary focus:outline-none "
                 placeholder="Enter your email"
                 ref={inputRef}
               />
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium leading-6 text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-md focus:outline-none bg-[#7b9385]"
+                  className="flex items-center justify-center w-full px-4 py-3 text-lg font-semibold leading-6 uppercase rounded-lg bg-almond_green"
                   ref={buttonRef}
                 >
                   Subscribe
                 </button>
               </div>
             </form>
-            <p className="mt-3 text-sm leading-5 text-gray-700 dark:text-gray-200" ref={secondPhraseRef}>We will never spam. That's our promise.</p>
-            {errors.email && <p className="mt-3 text-sm leading-5 text-red-500">{errors.email.message}</p>}
+            <p className="mt-3 text-sm leading-5"  ref={secondPhraseRef}>We will never spam. That's our promise.</p>
+            {errors.email && <p className="mt-3 text-sm leading-5 text-light_red dark:text-dark_red">{errors.email.message}</p>}
           </div>
         </div>
       </div>

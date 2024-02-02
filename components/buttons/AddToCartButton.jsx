@@ -13,7 +13,7 @@ const AddToCartButton = ({ product }) => {
         _id: product._id,
         name: product.name,
         price: product.price,
-        image: product.image
+        image: product.images[0]
     }
     
 
@@ -24,7 +24,7 @@ const AddToCartButton = ({ product }) => {
   };
 
   return (
-    <RippleButton type={"submit"} text={"Add To Cart"} buttonClasses={"w-full mt-10 text-xl rounded-md bg-light-inverted text-dark-primary dark:bg-zinc-300 dark:text-light-primary  lg:w-[250px]"}  onClick={handleAddToCart} />
+    <RippleButton type={"submit"} text={"Add To Cart"} buttonClasses={"w-full mt-10 text-xl rounded-md bg-almond_green  lg:w-[250px]"}  onClick={handleAddToCart} />
 
   )
 }

@@ -3,7 +3,7 @@ import CategoryComponent from "@/components/CategoryComponent";
 import Landing from "@/components/Landing";
 import NewsLetter from "@/components/NewsLetter";
 import Slider from "@/components/Slider";
-;
+
 
 export default function Home() {
   return (
@@ -11,7 +11,6 @@ export default function Home() {
       <Landing />
       <Slider />
       <Banner />
-      <CategoryComponent />
       <Slider />
       <NewsLetter />
     </main>
