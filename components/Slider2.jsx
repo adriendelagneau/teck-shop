@@ -85,7 +85,7 @@ const Slider2 = ({ data }) => {
 
   return (
     <div className="my-24">
-      <h2>best sales</h2>
+      <h2 className="after:h-5 after:bg-red-500 after:absolute">best sales</h2>
     <div className="relative overflow-hidden h-[500px] z-10 w-full my-6 mx-auto px-5" ref={sliderContainerRef}>
       <div className="absolute top-0 flex gap-6 py-3 transition-transform duration-500 ease-out" ref={sliderRef}>
         {data.map((item, i) => (
@@ -98,7 +98,8 @@ const Slider2 = ({ data }) => {
         <RippleButton
           onClick={slideLeft}
           buttonClasses="bg-light_secondary dark:bg-dark_secondary font-medium px-2 mr-2"
-          icon={<ChevronLeft className="w-6 h-6 text-light_primary dark:text-dark_primary" />}
+            icon={<ChevronLeft className="w-6 h-6 text-light_primary dark:text-dark_primary"
+            />}
           />
         <RippleButton
           onClick={slideRight}

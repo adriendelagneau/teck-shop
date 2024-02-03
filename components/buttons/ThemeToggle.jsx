@@ -18,9 +18,9 @@ const ThemeToggle = () => {
     return (
         <div className='cursor-pointer'>
             {theme === "light" ? (
-                <Moon onClick={() => setTheme("dark")}  />
-            ) : (
-                <Sun onClick={() => setTheme("light")}/>
+                <Sun onClick={() => setTheme("dark")}/>
+                ) : (
+                <Moon onClick={() => setTheme("light")}  />
             )}
         </div>
   )

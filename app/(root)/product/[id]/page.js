@@ -1,6 +1,7 @@
 
 import { getProductById } from '@/actions/productActions'
 import ImageComponent from '@/components/ImageComponent'
+import Test from '@/components/Test'
 import AddToCartButton from '@/components/buttons/AddToCartButton'
 
 
@@ -23,7 +24,7 @@ const ProductPage = async ({ params: { id } }) => {
       
             <p className='text-xl text-light_gray dark:text-dark_gray '>{product.brand}</p>
           <p className='text-xl '>{product.description}</p>
-
+<Test />
           </div>
           <div className=''>
 

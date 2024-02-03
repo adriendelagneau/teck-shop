@@ -59,7 +59,7 @@ function RippleButton({ text, buttonClasses, onClick, type, icon, isLoading }) {
         {ripples.map((ripple) => (
           <span
             key={ripple.id}
-            className="absolute rounded-full bg-dark_secondary opacity-70 dark:bg-light_secondary"
+            className="absolute rounded-full opacity-30 bg-dark_secondary dark:bg-light_secondary"
             style={{
               left: ripple.x + 'px',
               top: ripple.y + 'px',

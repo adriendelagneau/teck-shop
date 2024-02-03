@@ -14,7 +14,7 @@
    @apply  bg-light_primary dark:bg-dark_primary text-light_primary dark:text-dark_primary;
   }
   h2 {
-    @apply text-3xl capitalize;
+    @apply text-3xl capitalize ;
   }
   button {
     @apply  px-4 py-3 text-lg font-semibold uppercase rounded-lg bg-almond_green;

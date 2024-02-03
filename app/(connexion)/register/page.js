@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { toast } from "sonner";
 import RippleButton from "@/components/buttons/RippleButton";
-import { findUserByEmail, signUpWithCredential } from "@/actions/authActions";
+import { findUserByEmail, registerWithCredential } from "@/actions/authActions";
 
 const Register = () => {
   const {
@@ -26,7 +26,7 @@ const Register = () => {
       toast.info('user already exist')
     } else {
       setIsLoading(true)
-      const res = await signUpWithCredential({ name, email, password })
+      const res = await registerWithCredential({ name, email, password })
 
       if (res?.msg) toast.success(`Email verification send to ${email}`)
       setIsLoading(false)
@@ -41,13 +41,13 @@ const Register = () => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full h-auto p-4 border rounded-lg shadow-xl border-light-primary dark:border-dark-primary"
+        className="w-full h-auto p-4 border rounded-lg shadow-xl border-light_primary dark:border-dark_primary"
       >
 
         <div className="relative mt-6">
           <input
             type="text"
-            className="relative dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(18,18,18)] z-10 w-full p-2 bg-transparent border-2 border-light-primary rounded-lg outline-none peer focus:border-dark-primary placeholder:text-transparent autofill:shadow-[inset_0_0_0px_1000px_rgb(239,239,239)] dark:border-dark-primary  dark:focus:border-light-secondary"
+            className="relative dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(18,18,18)] z-10 w-full p-2 bg-transparent border-2 border-light_primary rounded-lg outline-none peer focus:border-dark_primary placeholder:text-transparent autofill:shadow-[inset_0_0_0px_1000px_rgb(239,239,239)] dark:border-dark_primary  dark:focus:border-light_secondary"
             id="text1"
             placeholder="name"
             name="name"
@@ -65,17 +65,17 @@ const Register = () => {
           />
           <label
             htmlFor="text1"
-            className="absolute z-20 px-1 text-sm transition-all left-2 peer-placeholder-shown:top-3 peer-focus:-top-2 -top-2 peer-focus:text-light-primry peer-placeholder-shown:-z-10 peer-focus:z-20 peer-placeholder-shown:text-light-primary peer-focus:text-xs bg-light-primary dark:bg-dark-primary dark:peer-placeholder-shown:text-dark-primary"
+            className="absolute z-20 px-1 text-xs capitalize transition-all bg-light_primary dark:bg-dark_primary left-2 peer-placeholder-shown:top-3 peer-focus:-top-2 -top-2 peer-placeholder-shown:text-sm peer-focus:text-xs"
           >
             Name
           </label>
-          <p className="w-full h-5 pt-1 text-skin-red">{errors.name?.message}</p>
+          <p className="w-full h-5 pt-1 text-light_red ">{errors.name?.message}</p>
         </div>
 
         <div className="relative mt-6">
           <input
             type="email"
-            className="relative dark:border-dark-primary border-light-primary focus:border-dark-primary z-10 w-full p-2 bg-transparent border-2 rounded-lg outline-none peer  placeholder:text-transparent autofill:shadow-[inset_0_0_0px_1000px_rgb(239,239,239)] dark:focus:border-light-secondary dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(18,18,18)]"
+            className="relative dark:border-dark_primary border-light_primary focus:border-dark_primary z-10 w-full p-2 bg-transparent border-2 rounded-lg outline-none peer  placeholder:text-transparent autofill:shadow-[inset_0_0_0px_1000px_rgb(239,239,239)] dark:focus:border-light_secondary dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(18,18,18)]"
             id="email"
             placeholder="email"
             name="email"
@@ -93,11 +93,11 @@ const Register = () => {
           />
           <label
             htmlFor="email"
-            className="absolute z-20 px-1 text-sm transition-all left-2 peer-placeholder-shown:top-3 peer-focus:-top-2 -top-2 peer-focus:text-light-primry peer-placeholder-shown:-z-10 peer-focus:z-20 peer-placeholder-shown:text-light-primary peer-focus:text-xs bg-light-primary dark:bg-dark-primary dark:peer-placeholder-shown:text-dark-primary"
+            className="absolute z-20 px-1 text-xs capitalize transition-all bg-light_primary dark:bg-dark_primary left-2 peer-placeholder-shown:top-3 peer-focus:-top-2 -top-2 peer-placeholder-shown:text-sm peer-focus:text-xs"
           >
             Email
           </label>
-          <p className="w-full h-5 pt-1 text-skin-red">
+          <p className="w-full h-5 pt-1 text-light_red ">
             {errors.email?.message}
           </p>
         </div>
@@ -105,7 +105,7 @@ const Register = () => {
         <div className="relative mt-6">
           <input
             type={isPasswordVisible ? "text" : "password"}
-            className="relative dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(18,18,18)] dark:border-dark-primary border-light-primary focus:border-dark-primary z-10 w-full p-2 pr-8 bg-transparent border-2 rounded-lg outline-none peer  placeholder:text-transparent autofill:shadow-[inset_0_0_0px_1000px_rgb(239,239,239)] dark:focus:border-light-secondary"
+            className="relative dark:autofill:shadow-[inset_0_0_0px_1000px_rgb(18,18,18)] dark:border-dark_primary border-light_primary focus:border-dark_primary z-10 w-full p-2 pr-8 bg-transparent border-2 rounded-lg outline-none peer  placeholder:text-transparent autofill:shadow-[inset_0_0_0px_1000px_rgb(239,239,239)] dark:focus:border-light_secondary"
             id="password"
             placeholder="password"
             name="password"
@@ -123,7 +123,7 @@ const Register = () => {
           />
           <label
             htmlFor="password"
-            className="absolute z-20 px-1 text-sm transition-all left-2 peer-placeholder-shown:top-3 peer-focus:-top-2 -top-2 peer-focus:text-light-primry peer-placeholder-shown:-z-10 peer-focus:z-20 peer-placeholder-shown:text-light-primary peer-focus:text-xs bg-light-primary dark:bg-dark-primary dark:peer-placeholder-shown:text-dark-primary"
+            className="absolute z-20 px-1 text-xs capitalize transition-all bg-light_primary dark:bg-dark_primary left-2 peer-placeholder-shown:top-3 peer-focus:-top-2 -top-2 peer-placeholder-shown:text-sm peer-focus:text-xs"
           >
             Password
           </label>
@@ -150,14 +150,14 @@ const Register = () => {
               d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
             />
           </svg>
-          <p className="w-full h-5 pt-1 text-skin-red">
+          <p className="w-full h-5 pt-1 text-light_red ">
             {errors.password?.message}
           </p>
         </div>
 
         <RippleButton
           text={isLoading ? "Loading..." : "Register"}
-          buttonClasses={"w-full mt-10 text-xl rounded-md bg-light-inverted text-dark-primary p-2 "}
+          buttonClasses={"w-full mt-10 text-xl rounded-md bg-almond_green text-dark-primary p-2 "}
           type="submit"
           disabled={isLoading}
           isLoading={isLoading}
