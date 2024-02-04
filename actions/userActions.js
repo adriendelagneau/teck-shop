@@ -1,5 +1,8 @@
 'use server'
 
+import { connectToDatabase } from "@/lib/db";
+import User from "@/lib/models/User";
+
 export const subscribeToNewsletter = async (email) => {
     await connectToDatabase();
 
@@ -17,4 +20,21 @@ export const subscribeToNewsletter = async (email) => {
       console.log('Error getting user with order history:', err);
       redirect(`/errors?error=${err.message}`);
     }
-  };
+};
+  
+export const getUserWithOrderHistory = async (userId) => {
+  await connectToDatabase();
+
+  try {
+    // Find the user by ID and populate the 'orderHistory' array with order details
+    const user = await User.findById(userId).populate('orderHistory').exec();
+
+    if (!user)   if (!user) throw new Error('no user')
+
+    return user;
+  } catch (err) {
+    console.log('Error getting user with order history:', err);
+    // Handle other errors
+    redirect(`/errors?error=${err.message}`);
+  }
+};

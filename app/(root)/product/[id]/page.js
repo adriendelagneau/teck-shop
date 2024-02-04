@@ -24,7 +24,6 @@ const ProductPage = async ({ params: { id } }) => {
       
             <p className='text-xl text-light_gray dark:text-dark_gray '>{product.brand}</p>
           <p className='text-xl '>{product.description}</p>
-<Test />
           </div>
           <div className=''>
 
